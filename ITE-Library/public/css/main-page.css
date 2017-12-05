@@ -1,0 +1,426 @@
+body{
+    margin: 0;
+    padding:0;
+    /*font-family: "Roboto Condensed";*/
+}
+
+.navbar-inverse {
+    border-bottom: none !important;
+}
+
+.navbar-toggle {
+    border: 1px solid white;
+
+}
+
+/*.navbar-inverse .navbar-collapse .navbar-inverse .navbar-form {*/
+    /*border-color: transparent !important;*/
+/*}*/
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-collapse .navbar-inverse .navbar-form {
+        color: rgb(57,73,171) !important;
+
+    }
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    color: #fff;
+
+}
+li a {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    color: white !important;
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+}
+li a:after {
+    content: '';
+    width: 0%;
+    margin-left: 50%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    border-radius: 40%;
+    position: absolute;
+    transition: all 0.5s;
+}
+li a:hover:after {
+    background-color: white;
+    width: 60%;
+    margin-left: 20%;
+    box-shadow: 0px 0px 10px white;
+}
+li a.active:after {
+    color: white;
+    width: 60%;
+    margin-left: 20%;
+    box-shadow: 0px 0px 10px white;
+}
+
+/* *********************************
+           Toolbar Logo
+  ********************************** */
+.small-logo-container {
+    padding-top: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.small-logo-container a:hover{
+    color: white;
+}
+.small-logo-container a:focus{
+    /*color: #7E57C2;*/
+    /*color: darkorange;*/
+    /*color: yellow;*/
+    /*color: red;*/
+    /*color: #761c19;*/
+    color: #448AFF;
+}
+
+
+
+.small-logo {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+/* *********************************
+           Big Logo
+  ********************************** */
+.big-logo-row {
+    width: 960px;
+    /*background-image: url("../image/ebook_photo.jpg");*/
+    background:url("../image/book-and-ebook-holding-hands.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 500px;
+    width: 100%;
+}
+/*-----------------------------------------*/
+.mega-dropdown {
+    position: static !important;
+}
+.mega-dropdown-menu {
+    padding: 10px 0px;
+    width: 100%;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.mega-dropdown-menu > li > ul {
+    padding: 0;
+    margin: 0;
+}
+.mega-dropdown-menu  ul > li {
+    list-style-type: none;
+    text-decoration: none;
+}
+.mega-dropdown-menu > li > ul > li > a {
+    display: block !important;
+    font-size: 18px;
+    color: #222!important;
+    padding: 10px 30px 10px 30px ;
+}
+.mega-dropdown-menu  ul > li > a:hover{
+    text-decoration: none;
+    color: red !important;
+}
+.mega-dropdown-menu > li ul > li > a:focus {
+    text-decoration: none;
+    color: #1f648b !important;
+}
+.mega-dropdown-menu .dropdown-header {
+    font-size: 18px;
+    color:red;
+    font-weight: 400;
+    padding: 10px 30px 10px 30px ;
+    line-height: 30px;
+}
+
+/*-------------------------------------------*/
+.txt-popular-book h2 a{
+    color: #01579B !important;
+    text-decoration: none;
+
+}
+.txt-popular-book h2 a:hover{
+    color: #304FFE !important;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+/*---------------------------*/
+
+.book-item {
+    padding: 15px;
+    background: #fff;
+    margin-top: 20px;
+    position: relative;
+}
+.book-item:hover {
+    box-shadow: 5px 5px rgba(234, 234, 234, 0.9);
+}
+.book-item:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    line-height:0;
+}
+.sticker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 63px;
+    height: 63px;
+}
+.sticker-new {
+    background: url('../image/img_info/POP.png') no-repeat;
+    left: auto;
+    right: 0;
+}
+.book-img-wrapper {
+    position: relative;
+}
+.book-img-wrapper div {
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.book-item:hover>.book-img-wrapper>div {
+    display: block;
+}
+.book-img-wrapper div .btn {
+    padding: 3px 10px;
+    color: #fff;
+    border: 1px #fff solid;
+    margin: -13px 5px 0;
+    background: transparent;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    line-height: 1.4;
+    font-size: 12px;
+}
+.book-item .btn:hover {
+    background: #e84d1c;
+    border-color: #c8c8c8;
+}
+
+.book-item h3 {
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+}
+.book-item h3 a {
+    color: #3e4d5c;
+}
+.book-item h3 a:hover {
+    color: #E02222;
+}
+.book-page{
+    color: #e84d1c;
+    font-size: 18px;
+    float: left;
+    padding-top: 1px;
+}
+.book-item .rating {
+    float: right;
+    color: #a8aeb3;
+    border: 1px #ededed solid;
+    padding: 3px 6px;
+    text-transform: uppercase;
+}
+.book-item .rating:hover {
+    color: #fff;
+    background: #e84d1c;
+    border-color: #e84d1c;
+}
+
+
+/*------------------Popular----------------------------------------------------*/
+
+/*-------section new book-----------*/
+
+.txt-new-book h2 a{
+    color: #01579B !important;
+    text-decoration: none;
+
+}
+.txt-new-book h2 a:hover{
+    color: #304FFE !important;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-section {
+    background: rgb(13, 71, 161);
+    padding: 1.5em 0;
+    text-decoration: none !important;
+
+}
+
+.footer-column h4 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: .5em;
+}
+.footer-column p {
+    font-size: .96em;
+    color: #eee;
+    line-height: 1.8em;
+    text-decoration: none;
+}
+.footer-column ul>li>a> {
+    text-decoration: none;
+}
+
+.footer-column ul, li, a {
+    font-size: .96em;
+    color: #eee;
+    line-height: 1.8em;
+    list-style-type: none;
+    text-decoration: none !important;
+}
+/**/
+.social{
+    margin-left: -30px;
+}
+.social li {
+    background: none repeat scroll 0 0 blue;
+    border: 2px solid #B5B5B5;
+    border-radius: 50%;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    width: 36px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+}
+.social li:hover {
+    color: blue;
+    text-decoration: none;
+
+}
+.social li a {
+    color: #EDEFF1;
+}
+.social li:hover {
+    border: 2px solid #2c3e50;
+    background: #2c3e50;
+}
+.social li a i {
+    font-size: 16px;
+    margin: 0 0 0 5px;
+    color: #EDEFF1 !important;
+}
+.footer-text-bottom {
+    width: 100%;
+    background-color: #0D47A1;
+    box-shadow: 5px 0 10px gray;
+}
+.txt-footer-bottom-left h5{
+    color: white;
+    margin-top: 20px;
+
+}
+.txt-footer-bottom-right h5{
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+/*-------------------Form-Upload------------------*/
+
+/* The triangle form is achieved by a CSS hack */
+.upload-triangle {
+    width: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: 12px solid transparent;
+    border-bottom-color: #28d;
+}
+
+.upload-header {
+    background: #28d;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.actknowledge-triangle{
+    width: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: 12px solid transparent;
+    border-bottom-color: #28d;
+
+}
+.txt-knowledge h2{
+    background: #28d !important;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+
+}
